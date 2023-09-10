@@ -19,7 +19,7 @@ class Vector{
 	 void set(int index, double number){
 		if(index<this.size){
 			arr[index]=number;
-			System.out.println(number+" is set");
+			//System.out.println(number+" is set");
 		}
 		else{
 			System.out.println("index out of range");
@@ -33,7 +33,7 @@ class Vector{
 			//System.out.println(number+" is set");
 		}
 		else{
-			System.out.println("index out of range");
+			//System.out.println("index out of range");
 			return -1;
 		} 
 	 }
