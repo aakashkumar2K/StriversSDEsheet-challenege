@@ -1,0 +1,31 @@
+import java.util.*;
+class ques7{
+     public static void main(String []args){
+		  System.out.println("enter the binary string");
+	     String str=new String();
+		 Scanner sc=new Scanner(System.in);
+		 str=sc.nextLine();
+		 int size=str.length();
+		 double number=0;
+		 int i=0;
+		 int flag=0;
+		 for(int j=size-1;j>=0;j--){
+			 int temp=(str.charAt(j)-48);
+             
+		    if(temp>1){
+		   
+		    System.out.println("numbere is not binary");
+			//System.out.println(temp);
+			flag=1;
+			break;
+			
+		     }
+		      number=number+(temp)*Math.pow(2,i);
+		       i++;
+		 }
+		 if(flag==0){
+			 System.out.println("number is : "+ number);
+		 }
+		 
+	 }
+ }

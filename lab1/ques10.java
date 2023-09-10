@@ -1,0 +1,18 @@
+import java.util.*;
+class ques10{
+	public static void main(String [] args){
+		double no1=Double.parseDouble(args[0]);
+		double no2=Double.parseDouble(args[1]);
+		double no3=Double.parseDouble(args[2]);
+		double d= no2*no2-4*no1*no3;
+		if(d>0){
+			
+			 System.out.println("roots are: " + ((-no2+Math.sqrt(d))/(2*no1)) +" " +((-no2-Math.sqrt(d))/(2*no1)));
+			
+		}
+		else{
+			System.out.println("roots are: " + (-no2/(2*no1)) +" + " +Math.sqrt(-1*d) +"," +(-no2/(2*no1)) +" - " +Math.sqrt(-1*d));
+		}
+		
+	}
+}

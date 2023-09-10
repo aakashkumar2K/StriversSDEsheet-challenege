@@ -1,0 +1,26 @@
+import java.util.*;
+abstract class DBentity{
+	
+abstract void insert(DBentity var);
+abstract void delete(int var);
+abstract void update(DBentity var,int v);
+static DBentity factoryMethod(String s){
+	DBentity var;
+switch(s){
+	case "doctor":
+	  var=new doctor();
+	  break;
+	case "Patient":
+      var=new Patient();
+    case "Staff":
+      var=new Staff();	
+	default:
+       var=null;	
+ }
+return var;
+}
+ abstract void alter(){
+	System.out.println("implementation is in progress");
+}
+
+}

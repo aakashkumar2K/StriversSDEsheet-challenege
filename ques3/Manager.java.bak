@@ -1,0 +1,6 @@
+class Manager extends Employee{
+    Manager(String name,int id,String office){
+       super(name,id,office);
+    this.designation="Manager";
+}
+}

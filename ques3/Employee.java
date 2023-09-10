@@ -1,0 +1,32 @@
+import java.util.*;
+abstract class Employee{
+	//static int count=0;
+	String name;
+    int id;
+    String office;
+	String designation;
+	Employee(String name,int id,String office){
+		name=new String();
+		this.name=name;
+		this.id=id;
+		office=new String();
+		this.office=office;
+		
+	}
+	abstract void insert();
+	abstract void delete();
+	static Employee getEmployee(String s){
+		
+		switch(s){
+	     case "Developer":
+		    count++;
+           return 	new Developer("abc",123,"abc");	 
+		   
+		 case "Manager":
+		 count++;
+           return new Manager("abc",111,"xyz");
+         default :
+        return null; 		 
+		}
+	}
+}

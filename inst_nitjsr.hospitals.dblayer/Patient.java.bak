@@ -1,0 +1,11 @@
+class Patient extends DBentity{
+ void insert(DBentity var){
+	 System.out.println("insert method in patient class");
+ }
+ void delete(int var){
+	  System.out.println("delete method in pateient class");
+ }
+void update(DBentity var,int v){
+	 System.out.println("update  method in patient class");
+}
+}
